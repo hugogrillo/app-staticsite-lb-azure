@@ -24,7 +24,7 @@ jobs:
     - uses: actions/checkout@v4
     - run : terraform -chdir=./terraform/azure init
     - run : terraform -chdir=./terraform/azure validate
-
+ 
   CD-deploy:
     name: Deploy
     needs: CI-test
