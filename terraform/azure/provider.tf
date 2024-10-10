@@ -6,8 +6,8 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = "rg-staticsite-lb-tf-hugoalves"
-    storage_account_name = "staticsitelbtfhugoalves"
+    resource_group_name  = "rg-staticsite-lb-tf-hugogrillo"
+    storage_account_name = "staticsitelbtfhugo"
     container_name       = "tfstate"
     key                  = "terraform.tfstate"
   }
@@ -23,6 +23,6 @@ provider "azurerm" {
 }
 
 resource "azurerm_resource_group" "rg" {
-    name     = "rg-staticsite-lb-hugo"
+    name     = "rg-staticsite-lb-tf-hugogrillo"
     location = "brazilsouth"
 }
