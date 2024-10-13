@@ -7,7 +7,7 @@ terraform {
   }
   backend "azurerm" {
     resource_group_name  = "rg-staticsite-lb-tf-hugogrillo"
-    storage_account_name = "staticsitelbtfhugo"
+    storage_account_name = "staticsitelbtfhugoalves"
     container_name       = "tfstate"
     key                  = "terraform.tfstate"
   }
