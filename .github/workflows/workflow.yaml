@@ -3,7 +3,7 @@ name: IaC Pipeline
 on:
   push:
     branches:
-    - azure
+    - domingou
 
 env:
   TERRAFORM_VERSION  : 1.9.7
